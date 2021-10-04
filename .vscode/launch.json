@@ -8,7 +8,7 @@
             "name": "main file",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/polarbear/main.py",
+            "program": "${workspaceFolder}/main.py",
             "console": "integratedTerminal"
         }
     ]
