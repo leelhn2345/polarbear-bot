@@ -15,4 +15,4 @@ Will organize handlers soon.
 - create a '.env' file in root, with key-value pair(s) like "sample.env"
 - .vscode/settings.json should only contain machine-agnostic settings.
 - git merge from master branch for latest updates
-- git rebase when there's merge conflicts in pull requests
+- git rebase onto master when there're merge conflicts in pull requests
