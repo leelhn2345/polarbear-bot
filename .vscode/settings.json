@@ -1,0 +1,11 @@
+// This file should only contain machine-agnostic settings.
+// For any non-machine-agnostic settings, please create a workspace and input settings in there.
+{
+  "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.formatting.provider": "black",
+  "python.analysis.typeCheckingMode": "basic",
+  "editor.formatOnSave": true,
+  "autoDocstring.docstringFormat": "numpy",
+  "autoDocstring.startOnNewLine": true,
+}

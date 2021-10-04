@@ -1,0 +1,7 @@
+.venv
+*.env
+!sample.env
+logs
+*.code-workspace
+*cache*
+*.ipynb
