@@ -1,5 +1,6 @@
-from loguru import logger
 import sys
+
+from loguru import logger
 
 logger.remove()
 
@@ -7,7 +8,7 @@ logger.add(
     sys.stdout,
     colorize=True,
     format="{time:YYYY-MM-DD HH:mm:ss} | <level>{level}</level> | {name} -- line {line} | {message}",
-    level="DEBUG",
+    level="INFO",
 )
 
 logger.add("logs/wow.log")

@@ -1,7 +1,8 @@
-from aiogram import Dispatcher, types
-import httpx
 from datetime import datetime
-import re
+
+import httpx
+from aiogram import Dispatcher, types
+
 from lib.logger import logger
 
 
@@ -82,7 +83,7 @@ async def sendTime(message: types.Message) -> None:
     elif 12 <= hour < 18:
         dynamicResponse = "Good afternoon!\nYou should be working now!"
     else:
-        dynamicResponse = "You have incredily hard today!\nGreat job! 👍"
+        dynamicResponse = "You have worked incredibly hard today!\nGreat job! 👍"
 
     await message.reply(f"The time now is {time}{md}.\n{dynamicResponse}")
 
@@ -106,6 +107,9 @@ async def askQns(message: types.Message) -> None:
 
     if message.text == "ohh.. take care":
         await message.reply("thank you 🤒")
+
+    if firstWord == "fuck":
+        await message.reply("hey! no vulgarities allowed")
 
 
 def registerCommands(dp: Dispatcher) -> None:
